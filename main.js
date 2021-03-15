@@ -1,5 +1,6 @@
 var scrollToTop = document.querySelector('.scroll-to-top');
 
+//Header-Scroll
 window.onscroll = function () {
 
     var headerPosition = document.querySelector('.header');
@@ -20,13 +21,9 @@ function goToTop() {
     $('html, body').animate({scrollTop:0}, 'medium');
 }
 
-
+//Fade in
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-
-    if (scroll >= 0) {
-        $(".banner-con").addClass("show-item");
-    } 
 
     if (scroll >= 50) {
         $(".link").addClass("show-item");
@@ -40,12 +37,32 @@ $(window).scroll(function () {
         $(".services-layout").addClass("show-item");
     }
 
-    if (scroll >= 1200 ) {
+    if (scroll >= 1100 ) {
         $(".social-layout").addClass("show-item");
     }
 
     if (scroll >= 1800 ) {
         $(".slide-client").addClass("show-item");
     }
+});
+
+//Scroll-spy
+
+$(document).ready(function () {
+    $(".nav-bar .home").on("click", function (e) {
+        $('html, boy').animate({scrollTop: 0}, 200);
+    });
+
+    $(".nav-bar .service-link").on("click", function (e) {
+        $('html, boy').animate({scrollTop: 900}, 200);
+    });
+
+    $(".nav-bar .social-link").on("click", function (e) {
+        $('html, boy').animate({scrollTop: 1600}, 200);
+    });
+
+    $(".nav-bar .client-link").on("click", function (e) {
+        $('html, boy').animate({scrollTop: 2300}, 200);
+    });
 });
 
