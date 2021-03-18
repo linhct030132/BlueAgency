@@ -66,3 +66,18 @@ $(document).ready(function () {
     });
 });
 
+//Slider
+
+$('.client-layout').slick({
+    rows: 2,
+	dots: false,
+	infinite: true,
+    arrow: false,
+    prevArrow: null,
+    nextArrow: null,
+	speed: 500,
+	slidesToShow: 5,
+	slidesToScroll: 1,
+    autoplay: true,
+    autoplayspeed: 3500,
+});

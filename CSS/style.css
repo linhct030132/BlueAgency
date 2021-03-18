@@ -266,6 +266,7 @@
 
 .slide-client {
     position: relative;
+
 }
 
 .slide-client .slink-next,
@@ -306,11 +307,14 @@
     overflow: hidden;
     justify-content: space-around;
     flex-wrap: wrap;
+    display: block;
+
 }
 
 .slide-client .client-layout .client-item {
     width: 218px;
     cursor: pointer;
+    padding: 0px 15px;
 }
 
 .img-item {
